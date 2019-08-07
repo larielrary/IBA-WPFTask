@@ -1,0 +1,43 @@
+﻿<Window x:Class="WPFTask.ErrorInput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTask"
+        mc:Ignorable="d"
+        Title="ErrorInput" Height="205" Width="436.418" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid RenderTransformOrigin="0.915,2.002">
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStopCollection>
+                    <GradientStop Offset="0.2" Color="#355C7D"></GradientStop>
+                    <GradientStop Offset="0.4" Color="#6C5B7B"></GradientStop>
+                    <GradientStop Offset="1" Color="#C06C84"></GradientStop>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Ok" Click="Ok_Click" MinWidth="60" Margin="17,128,253,15" Grid.RowSpan="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="OK" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="7,0,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="Cancel" Click="Cancel_Click" MinWidth="60" Margin="253,128,17,15" Grid.RowSpan="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Cancel" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="7,0,0,0"/>
+            </StackPanel>
+        </Button>
+        <Label FontSize="16" HorizontalAlignment="Center" Margin="81,32,82,0" VerticalAlignment="Top" Height="60" Width="267">
+            <Label.Content>
+                <TextBlock HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" Width="261" Height="54" RenderTransformOrigin="0.507,0.433">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="-0.267"/>
+                            <RotateTransform Angle="0.173"/>
+                            <TranslateTransform X="-0.011" Y="-1.146"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>You entered incorrect data. Please press OK button to re-enter.</TextBlock>
+            </Label.Content>
+        </Label>
+    </Grid>
+</Window>
